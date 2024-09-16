@@ -1,0 +1,109 @@
+@import url("reset.css");
+
+@import url("./reset.css");
+
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #0b615b;
+}
+
+.main-title {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    background: linear-gradient(90deg, #5cc2c6 30%, #aac9d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sub-title {
+    text-align: center;
+    color: #aac9d9;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.main-container {
+    max-width: 1200px;
+    padding: 40px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #2f9595;
+    box-shadow: 1px 1px 10px 1px #5cc2c6;
+    cursor: pointer;
+}
+
+.card-container:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px 6px #5cc2c6;
+}
+
+.card-container:hover .card-image {
+    transform: scale(1.02) rotate(1deg);
+}
+
+.card-container-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card-image {
+    transition: all .2s ease-in-out;
+}
+
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 10px 10px 10px;
+
+}
+
+.product-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-price {
+    color: white;
+    font-size: 16px;
+}
+
+@media (min-width:640px) {
+    .main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:858px) {
+    .main-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
