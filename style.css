@@ -83,7 +83,9 @@ body {
 .card-text-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 14px;
     padding: 0px 10px 10px 10px;
 
 }
